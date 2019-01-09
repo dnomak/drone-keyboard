@@ -12,7 +12,8 @@ Add screenshots for the bug, so we can easily work on it!
 
 - Drone Keyboard for Tello Version: 
 - Platform/OS & Version:
-- Google Chrome Version: 
+- Google Chrome Version:
+- VXG Media Player Chrome Extension Version:
 
 **Additional context**
 Add any other context about the problem here.
