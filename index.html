@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=1280">
+    <title>Drone Keyboard for Tello</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-25094721-12"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-25094721-12');
+    </script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./public/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./public/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./public/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./public/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./public/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./public/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./public/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./public/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./public/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./public/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./public/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url('./public/fonts/roboto-v18-latin_latin-ext-300.eot'); /* IE9 Compat Modes */
+        src: local('Roboto Light'), local('Roboto-Light'),
+             url('./public/fonts/roboto-v18-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('./public/fonts/roboto-v18-latin_latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('./public/fonts/roboto-v18-latin_latin-ext-300.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./public/fonts/roboto-v18-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+        src: local('Roboto'), local('Roboto-Regular'),
+             url('./public/fonts/roboto-v18-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('./public/fonts/roboto-v18-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('./public/fonts/roboto-v18-latin_latin-ext-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url('./public/fonts/roboto-v18-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+        src: local('Roboto Bold'), local('Roboto-Bold'),
+             url('./public/fonts/roboto-v18-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('./public/fonts/roboto-v18-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+             url('./public/fonts/roboto-v18-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('./public/fonts/roboto-v18-latin_latin-ext-700.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Kaushan Script';
+        font-style: normal;
+        font-weight: 400;
+        src: url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+        src: local('Kaushan Script'), local('KaushanScript-Regular'),
+             url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+             url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+             url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('./public/fonts/kaushan-script-v6-latin_latin-ext-regular.svg#KaushanScript') format('svg'); /* Legacy iOS */
+      }
+    </style>
+    <!-- <link rel="stylesheet" type="text/css" href="./dist/css/app.c251e56e.css"> -->
+    <script>
+      var electron = true;
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script type="text/javascript" src="./dist/js/chunk-vendors.de8a32bd.js"></script>
+    <script type="text/javascript" src="./dist/js/app.b7534fc1.js"></script> -->
+    <script src="http://localhost:8080/app.js"></script>
+  </body>
+</html>

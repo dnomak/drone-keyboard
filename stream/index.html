@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache" />
+		<meta name="viewport" content="width=1280">
+    <title>Stream</title>
+    <!-- Fonts -->
+    <style>
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        src: url('/fonts/roboto-v18-latin_latin-ext-300.eot'); /* IE9 Compat Modes */
+        src: local('Roboto Light'), local('Roboto-Light'),
+             url('/fonts/roboto-v18-latin_latin-ext-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('/fonts/roboto-v18-latin_latin-ext-300.woff2') format('woff2'), /* Super Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/roboto-v18-latin_latin-ext-300.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url('/fonts/roboto-v18-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
+        src: local('Roboto'), local('Roboto-Regular'),
+             url('/fonts/roboto-v18-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('/fonts/roboto-v18-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/roboto-v18-latin_latin-ext-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        src: url('/fonts/roboto-v18-latin_latin-ext-700.eot'); /* IE9 Compat Modes */
+        src: local('Roboto Bold'), local('Roboto-Bold'),
+             url('/fonts/roboto-v18-latin_latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             url('/fonts/roboto-v18-latin_latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-700.woff') format('woff'), /* Modern Browsers */
+             url('/fonts/roboto-v18-latin_latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+             url('/fonts/roboto-v18-latin_latin-ext-700.svg#Roboto') format('svg'); /* Legacy iOS */
+      }
+    </style>
+</head>
+<body style="overflow: hidden; font-family: 'Roboto', sans-serif;">
+	<!-- <div class="vxgplayer" id="vxg_media_player" width="582" height="437" url="rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov" autostart controls avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf"></div> -->
+	<div class="vxgplayer" id="vxg_media_player" width="582" height="437" url="udp://192.168.10.1:11111" autostart controls avsync nmf-src="pnacl/Release/media_player.nmf" nmf-path="media_player.nmf"></div>
+	<script type="text/javascript" src="/js/vxgplayer-1.8.31.min.js"></script>
+	<link href="/css/normalize.css" rel="stylesheet"/>
+	<link href="/css/vxgplayer-1.8.31.min.css" rel="stylesheet"/>
+  <style>
+    .vxgplayer {
+      border: 0;
+      box-shadow: none;
+      margin: 0;
+    }
+  </style>
+</body>
+</html>

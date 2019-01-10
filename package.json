@@ -1,0 +1,53 @@
+{
+  "name": "drone-keyboard",
+  "version": "1.0.0",
+  "homepage": "https://dnomak.com/drone-keyboard/",
+  "description": "Drone Keyboard for Tello",
+  "author": "@dnomak <me@dnomak.com>",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "serve:electron": "electron .",
+    "build:electron:mac": "electron-packager . 'Drone Keyboard for Tello' --overwrite --platform=darwin --arch=x64 --prune=true --out=release-builds --icon=src/assets/icons/mac/icon.icns"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.12",
+    "@fortawesome/free-brands-svg-icons": "^5.6.3",
+    "@fortawesome/free-regular-svg-icons": "^5.6.3",
+    "@fortawesome/free-solid-svg-icons": "^5.6.3",
+    "@fortawesome/vue-fontawesome": "^0.1.4",
+    "express": "^4.16.4",
+    "express-static": "^1.2.6",
+    "flexiblegs-scss": "^5.6.0",
+    "flexiblegs-scss-plus": "^5.6.0",
+    "lodash": "^4.17.11",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0",
+    "vue": "^2.5.21",
+    "vue-hooks": "^0.3.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.0.1",
+    "electron": "^4.0.1",
+    "electron-debug": "^2.0.0",
+    "electron-packager": "^13.0.1",
+    "eslint": "^5.12.0",
+    "eslint-plugin-vue": "^5.1.0",
+    "node-sass": "^4.11.0",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "engines": {
+    "node": "10.14.x",
+    "npm": "6.5.0"
+  }
+}
