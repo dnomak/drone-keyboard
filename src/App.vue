@@ -3,7 +3,7 @@
   .wrap.xl-table.xl-middle.xl-center
     .col
       .drone-keyboard-video
-        .drone-keyboard-video__content(:class="{'drone-keyboard-video__content--stream' : stream}")
+        .drone-keyboard-video__content
           .drone-keyboard-status-bar
             .wrap.xl-auto.xl-flexbox.xl-between
               .col
@@ -99,12 +99,14 @@
                     | or Build locally (README.md)
               template(v-else)
                 template(v-if="!howToConnectInfo")
-                  .drone-keyboard-content__what-is-tello(@click="openExternalLink('https://click.dji.com/AHSn5tR7w7HPWm4l74NKwg?pm=link')")
-                    | What Makes Tello the Most Enjoyable Drone Ever
                   .drone-keyboard-content__title
-                    | DRONE <span>KEYBOARD</span>
+                    | DRONE KEYBOARD
                   .drone-keyboard-content__subtitle
                     | for Tello
+                  .drone-keyboard-content__watch-demo(@click="openExternalLink('https://www.youtube.com/watch?v=_MdNCSpX1Vg')")
+                    | WATCH DEMO
+                  .drone-keyboard__subtitles
+                    | Video in Turkish, and English subtitles available.
                 template(v-else)
                   .drone-keyboard-content-inner
                     .drone-keyboard-content__close(@click="howToConnectInfoButton()")
@@ -768,6 +770,7 @@ body {
 }
 .drone-keyboard-status-bar {
   position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -908,7 +911,7 @@ body {
   padding: 8px 24px;
   background: #222222;
   color: #ffffff;
-  border-radius: 4px;
+  border-radius: 100px;
   margin-top: 12px;
   margin-bottom: 10px;
   border: 3px solid #222222;
@@ -936,34 +939,52 @@ body {
     font-weight: 700;
   }
 }
-.drone-keyboard-content__what-is-tello {
-  display: inline-block;
-  font-size: 14px;
-  color: #222222;
-  line-height: 28px;
-  cursor: pointer;
-  font-weight: 700;
-  text-decoration: underline;
-}
 .drone-keyboard-content__title {
   position: relative;
+  z-index: 2;
   display: block;
   text-align: center;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 40px;
   line-height: normal;
-  span {
-    font-weight: 700;
-  }
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
 }
 .drone-keyboard-content__subtitle {
+  position: relative;
+  z-index: 2;
   font-family: 'Kaushan Script', cursive;
   display: block;
   font-weight: 700;
   padding-left: 4px;
   font-size: 37px;
-  color: #1094F6;
-  text-shadow: 0 0 16px #ffffff;
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
+}
+.drone-keyboard-content__watch-demo {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #0089D6;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 100px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 16px #000000;
+}
+.drone-keyboard__subtitles {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-weight: 400;
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  text-shadow: 0 0 16px #000000;
 }
 .drone-keyboard-content__stream {
   background: #222222;
@@ -987,13 +1008,25 @@ body {
 }
 .drone-keyboard-video__content {
   border: 3px solid #222222;
-  background: #ffffff;
   border-radius: 8px 8px 0 0;
   margin: 6px 6px 0 6px;
   width: 582px;
-  height: 390px;
+  height: 461px;
   position: relative;
   display: table;
+  background: #222222;
+  &::after {
+    content: "";
+    background: #222222 url(https://media.giphy.com/media/1jkXOfaXWm12cJK79u/giphy.gif) center bottom no-repeat;
+    background-size: 584px auto;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
 }
 .drone-keyboard {
   background: #F5F5F5;
