@@ -66,3 +66,5 @@ Drone Keyboard for Tello app is licensed under the [MIT](http://opensource.org/l
 ## Inspired by
 * [Wes Bos](https://github.com/wesbos/javascript-drones)
 * [Pynoth](https://dribbble.com/shots/5126767-HHKB)
+
+![](https://dnomak.com/img/drone-keyboard-for-tello--real.jpg?2387647263432)
