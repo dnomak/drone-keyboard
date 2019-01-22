@@ -1,8 +1,8 @@
-# Drone Keyboard for Tello
+# [Drone Keyboard for Tello](https://dnomak.com/drone-keyboard/)
 
 Drone Keyboard is a new way to control your Tello. A special design to have amazing experience with your pc and drone.
 
-[https://dnomak.com/drone-keyboard/](https://dnomak.com/drone-keyboard/)
+→ [https://dnomak.com/drone-keyboard/](https://dnomak.com/drone-keyboard/)
 
 ![](https://dnomak.com/img/drone-keyboard-for-tello--github.jpg?33876472634)
 
@@ -10,6 +10,8 @@ Drone Keyboard is a new way to control your Tello. A special design to have amaz
 Video in Turkish and English subtitles available!
 
 ![](https://dnomak.com/img/drone-keyboard-for-tello--youtube.jpg?33876472634)
+
+→ [https://www.youtube.com/watch?v=_MdNCSpX1Vg](https://www.youtube.com/watch?v=_MdNCSpX1Vg)
 
 # SAFETY FIRST!
 Use the codebase or app as your own risk. The drone can hurt you and I'm not responsible for that. Always test commands with the props removed first. Don't be dumb! Also please make sure that Tello’s **firmware is updated!** If Tello does not receive any command input for **15 seconds**, it will land automatically.
