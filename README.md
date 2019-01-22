@@ -11,11 +11,11 @@ Video in Turkish and English subtitles available!
 
 ![](https://dnomak.com/img/drone-keyboard-for-tello--youtube.jpg?33876472634)
 
-### TEST FLIGHT
-![](https://dnomak.com/img/drone-keyboard-for-tello--github.gif?33876472634)
-
 # SAFETY FIRST!
 Use the codebase or app as your own risk. The drone can hurt you and I'm not responsible for that. Always test commands with the props removed first. Don't be dumb! Also please make sure that Tello’s **firmware is updated!** If Tello does not receive any command input for **15 seconds**, it will land automatically.
+
+### TEST FLIGHT
+![](https://dnomak.com/img/drone-keyboard-for-tello--github.gif?33876472634)
 
 ## Software Used
 * Vue
