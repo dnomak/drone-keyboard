@@ -3,7 +3,7 @@
   .wrap.xl-table.xl-middle.xl-center
     .col
       .drone-keyboard-video
-        .drone-keyboard-video__content
+        .drone-keyboard-video__content(:class="[{'drone-keyboard-video__content--remove-background' : howToConnectInfo}, {'drone-keyboard-video__content--remove-background' : stream}, {'drone-keyboard-video__content--remove-background' : isElectron}]")
           .drone-keyboard-status-bar
             .wrap.xl-auto.xl-flexbox.xl-between
               .col
@@ -88,11 +88,6 @@
                   .drone-keyboard-content__close(@click="downloadInfoButton()")
                     .icon
                       font-awesome-icon(:icon="['fas', 'times']")
-                  .drone-keyboard-content__image(@click="openExternalLink('https://dnomak.com/drone-keyboard-download-mac-app')")
-                    .icon
-                      font-awesome-icon(:icon="['fab', 'apple']")
-                    img(src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAAA8AAD/4QOBaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzE0MCA3OS4xNjA0NTEsIDIwMTcvMDUvMDYtMDE6MDg6MjEgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6YzljMGE4MjgtMThiYy00ZmE1LTlmNGQtNWJkZjhhMzMzNGJiIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjYwNDEzMTExMEE3MzExRTlCNjYyRUI0REEzMjAyNDc0IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjYwNDEzMTEwMEE3MzExRTlCNjYyRUI0REEzMjAyNDc0IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZmFmMGQ1ZjYtYzg1OC00MzhhLWE0OWMtMjVjYTkyOTM0M2YyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmM5YzBhODI4LTE4YmMtNGZhNS05ZjRkLTViZGY4YTMzMzRiYiIvPiA8L3JkZjpEZXNjcmlwdGlv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PDuWqWGPRUAAAAAAABErVt4M07xplsUruTTe69UN6cl0BC5ikWpuRLrCQAAAAAAABCq28ZFm+3LWmoUeWItS3578yVbNAQ+l4IRh3pqSYeygAAAAAAAAAryw7enF6PczFkeeHctUsMeioAAAAAAACJWrbwZp3jTDYpXcmm916ob05LoCFzFItTciXWEgAAAAAAACFVt4ybN9uGtNQo8sRalObZrMa2KrSxX2pbSYuYpZJiaSwzIlPIQVylaaTTd5WgjTTTlUmVI84mxaYQbdZaUnKqs4nBqLAMyaiqKfo/1jHpxFd03W2kfDec3qK1KHEN03W2kfDec3qK1KHEN03W2kfDec3qK1KHEN03W2kfDec3qK1KHEN03W2kfDec3qK1KHEN03W2kfDec3qK1KHEN15cirYaxNqlUqqTHSp+JI21Rsal1pDaVFQaiW83DpSZc2k/qETiJil6VZhalZk9TLJedaZNFobXEtwRLNxuIJFCyS2RKc/iwCUSDJSaKaDwBWmqxMxabrbSPhvOb1FalF+Irum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4huv1NTbVbSX2JVFSN6q0gJxK46KjUrS4ZJwaEocJla/oSSaKcNQrVXamKbGNqWWvVFRrFF1ViawwkMZogY+Xk46lTRGdFJtoeMi5hKSkyE012E0ve620j4bzm9RWpRPERum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620j4bzm9RWpQ4hum620n4bzi9RWpQ4hupLZrZrXesNd4KuVcoHWiXSjLyqVL/wAqncNClIPLJuTyxmqgzMiwKBSqq1aIsf/Z")
-                  br
                   .drone-keyboard-content__button(@click="openExternalLink('https://dnomak.com/drone-keyboard-for-tello-app')")
                     | Download App for Mac only
                   .drone-keyboard-content__build-locally(@click="openExternalLink('https://github.com/dnomak/drone-keyboard')")
@@ -104,9 +99,9 @@
                   .drone-keyboard-content__subtitle
                     | for Tello
                   .drone-keyboard-content__watch-demo(@click="openExternalLink('https://www.youtube.com/watch?v=_MdNCSpX1Vg')")
-                    | WATCH DEMO
+                    | WATCH NOW
                   .drone-keyboard__subtitles
-                    | Video in Turkish, and English subtitles available.
+                    | Video in Turkish and English subtitles available!
                 template(v-else)
                   .drone-keyboard-content-inner
                     .drone-keyboard-content__close(@click="howToConnectInfoButton()")
@@ -117,7 +112,7 @@
                       div <span>2.</span> Press the power button on the side to start the drone.
                       div <span>3.</span> Connect to the Tello network from your computer's Wi-Fi settings, then click Connect button at the bottom.
                     .xl-center
-                      .drone-keyboard-content__button(@click="relunch()")
+                      .drone-keyboard-content__button.drone-keyboard-content__button--connect(@click="relunch()")
                         | CONNECT
                     .drone-keyboard-content__safety-first
                       .drone-keyboard-content__how-to-connect-title
@@ -770,7 +765,7 @@ body {
 }
 .drone-keyboard-status-bar {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   left: 0;
   right: 0;
@@ -814,6 +809,7 @@ body {
 }
 .drone-keyboard-content__close {
   position: absolute;
+  z-index: 2;
   cursor: pointer;
   top: 36px;
   right: 12px;
@@ -827,7 +823,7 @@ body {
     }
     svg,
     path {
-      fill: #222222;
+      fill: #ffffff;
     }
   }
 }
@@ -839,6 +835,8 @@ body {
   }
 }
 .drone-keyboard-content {
+  position: relative;
+  z-index: 2;
   display: table-cell;
   vertical-align: middle;
   padding-top: 24px;
@@ -851,12 +849,16 @@ body {
   text-align: center;
 }
 .drone-keyboard-content__how-to-connect-title {
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
   font-weight: 700;
   margin-bottom: 3px;
   font-size: 16px;
   line-height: 20px;
 }
 .drone-keyboard-content__how-to-connect-desc {
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
   font-size: 14px;
   line-height: 20px;
   span {
@@ -878,61 +880,43 @@ body {
     line-height: 18px;
   }
 }
-.drone-keyboard-content__image {
-  margin: 0 auto;
-  display: inline-block;
-  line-height: 0;
-  width: 108px;
-  position: relative;
-  img {
-    width: 108px;
-  }
-  .icon {
-    z-index: 2;
-    position: absolute;
-    top: -28px;
-    right: -16px;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 0;
-    svg {
-      width: auto !important;
-      height: 48px !important;
-    }
-    svg,
-    path {
-      fill: #222222;
-    }
-  }
-}
 .drone-keyboard-content__button {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 24px;
-  background: #222222;
+  padding: 12px 24px;
+  background: #0089D6;
   color: #ffffff;
+  font-weight: 700;
   border-radius: 100px;
-  margin-top: 12px;
   margin-bottom: 10px;
-  border: 3px solid #222222;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 16px #000000;
+}
+.drone-keyboard-content__button--connect {
+  margin-top: 24px;
 }
 .drone-keyboard-content__build-locally {
   cursor: pointer;
   text-align: center;
   font-size: 14px;
-  color: #222222;
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
   line-height: 28px;
   cursor: pointer;
   text-decoration: underline;
   font-weight: 700;
 }
 .drone-keyboard-content__forgot-password-title {
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
   font-weight: 700;
   margin-bottom: 3px;
   font-size: 12px;
   line-height: 18px;
 }
 .drone-keyboard-content__forgot-password-desc {
+  color: #ffffff;
+  text-shadow: 0 0 16px #000000;
   font-size: 12px;
   line-height: 18px;
   span {
@@ -940,8 +924,6 @@ body {
   }
 }
 .drone-keyboard-content__title {
-  position: relative;
-  z-index: 2;
   display: block;
   text-align: center;
   font-weight: 700;
@@ -951,8 +933,6 @@ body {
   text-shadow: 0 0 16px #000000;
 }
 .drone-keyboard-content__subtitle {
-  position: relative;
-  z-index: 2;
   font-family: 'Kaushan Script', cursive;
   display: block;
   font-weight: 700;
@@ -962,8 +942,6 @@ body {
   text-shadow: 0 0 16px #000000;
 }
 .drone-keyboard-content__watch-demo {
-  position: relative;
-  z-index: 2;
   cursor: pointer;
   display: inline-block;
   padding: 12px 24px;
@@ -977,8 +955,6 @@ body {
   box-shadow: 0 0 16px #000000;
 }
 .drone-keyboard__subtitles {
-  position: relative;
-  z-index: 2;
   color: #ffffff;
   font-weight: 400;
   display: block;
@@ -1002,8 +978,6 @@ body {
   width: 600px;
   margin: 0 auto;
   margin-bottom: -3px;
-  position: relative;
-  z-index: 2;
   margin-top: 24px;
 }
 .drone-keyboard-video__content {
@@ -1017,15 +991,20 @@ body {
   background: #222222;
   &::after {
     content: "";
-    background: #222222 url(https://media.giphy.com/media/1jkXOfaXWm12cJK79u/giphy.gif) center bottom no-repeat;
+    background: #222222 url('https://dnomak.com/img/drone-keyboard-for-tello--video.gif') center bottom no-repeat;
     background-size: 584px auto;
-    opacity: 0.2;
+    opacity: 0.3;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: 1;
+  }
+}
+.drone-keyboard-video__content--remove-background {
+  &::after {
+    display: none;
   }
 }
 .drone-keyboard {

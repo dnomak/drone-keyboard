@@ -4,6 +4,9 @@ Drone Keyboard is a new way to control your Tello. A special design to have amaz
 
 [https://dnomak.com/drone-keyboard/](https://dnomak.com/drone-keyboard/)
 
+### [WATCH NOW](https://www.youtube.com/watch?v=_MdNCSpX1Vg)
+Video in Turkish and English subtitles available!
+
 ![](https://dnomak.com/img/drone-keyboard-for-tello--github.jpg)
 
 # SAFETY FIRST!

@@ -76,7 +76,7 @@ function createWindow () {
           }
         },
         {
-          label: 'Version 1.0.0',
+          label: 'Version 1.0.1',
           enabled: false
         },
         {
